@@ -28,16 +28,9 @@
     </header>
     <div id="main" role="main">
 
-		<img  src="http://placesheen.com/200/300" alt=" " />
+		<img  src="img/faces.jpg" alt=" " />
 		<br />
-		<img  src="http://placesheen.com/200/300" alt=" " />
-		<br />
-		<img  src="http://placesheen.com/200/300" alt=" " />
-		<br />
-		<img  src="http://placesheen.com/200/300" alt=" " />
-		<br />
-		<img  src="http://placesheen.com/200/300" alt=" " />
-
+		<img  src="img/sheen.jpg" alt=" " />
     </div>
     <footer>
 
@@ -50,8 +43,11 @@
 
 
   <!-- scripts concatenated and minified via ant build script-->
-  <script defer src="js/plugins.js"></script>
-  <script defer src="js/script.js"></script>
+	<script src="js/libs/facedetection/ccv.js"></script> 
+	<script src="js/libs/facedetection/face.js"></script>
+	<script src="js/libs/jquery.facedetection.js"></script>
+	<script defer src="js/plugins.js"></script>
+	<script defer src="js/script.js"></script>
   <!-- end scripts-->
 
 
@@ -67,6 +63,6 @@
     <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
     <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
   <![endif]-->
-  
+	<!--<div id="test" style="position: absolute; left: 53.9995px; top: 49.8016px; width: 46px; height: 46px; border: 2px solid rgb(255, 0, 0);"></div>-->
 </body>
 </html>
