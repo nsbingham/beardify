@@ -12,7 +12,7 @@ $(function(){
 		if(w > 40 && l > 40) {
 			$el.faceDetection(
 				{complete: function(image, coordinates) {
-					beardMe($el,$beards.beard2,image,coordinates);
+					beardMe($el,$beards.beard1,image,coordinates);
 					//showOutline($el, image, coordinates);
 				},
 				error: function() {
@@ -56,7 +56,8 @@ $(function(){
 
 	function beardMeFaceApi(){
 
-		var apiUrl = "http://api.face.com/faces/detect.json?api_key=aa310f793c57fdaebe185bdcee13857&urls=";
+		//var apiUrl = "http://api.face.com/faces/detect.json?api_key=aa310f793c57fdaebe185bdcee13857&urls=";
+		var apiUrl = "http://local.beardify.com/example.json";
 
 		$.ajax({
 		  url: apiUrl,
