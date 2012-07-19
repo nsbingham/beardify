@@ -10,7 +10,7 @@ $(function(){
 		'beard1':{scale:1.3,pctX:1.02,pctY:0.23,src:'img/beard.png'},
 		'beard2':{scale:1.3,pctX:1.14,pctY:0.29,src:'img/mustache.png'}
 	},
-	beard = $beards.beard2;
+	beard = $beards.beard1;
 
 	$body.find('img').each(function(index, el){
 
@@ -64,6 +64,8 @@ $(function(){
 		//var apiUrl = "http://api.face.com/faces/detect.json?api_key=aa310f793c57fdaebe185bdcee13857&urls=";
 		var apiUrl = "http://local.beardify.com/example.json";
 
+		// Will probably need to prepend URL to images that do not include the absolute URL
+		// Code to do check in holiday FB app
 		$.ajax({
 			url: apiUrl,
 			dataType: 'jsonp',
